@@ -66,6 +66,30 @@ public class MovieViewModel extends ViewModel {
         return movie;
     }
 
+    public void searchMovies(final String language, String query) {
+        apiInterface.searchMovie(API_KEY, language, query).enqueue(new Callback<MoviesResponse>() {
+            @Override
+            public void onResponse(Call<MoviesResponse> call, Response<MoviesResponse> response) {
+                if (response.isSuccessful()) {
+                    ArrayList<Movie> movies = new ArrayList<>(Objects.requireNonNull(response.body()).getMovies());
+                    listMovies.postValue(movies);
+                    Log.d("Movie", "success loading from API");
+
+                } else {
+                    int statusCode = response.code();
+                    // handle request errors depending on status code
+                }
+            }
+
+            @Override
+            public void onFailure(Call<MoviesResponse> call, Throwable t) {
+                Log.d("Movie", "error loading from API");
+
+            }
+        });
+
+    }
+
     public void setMovie(int tv_id, String language) {
         apiInterface.getMovie(tv_id, API_KEY, language).enqueue(new Callback<Movie>() {
             @Override

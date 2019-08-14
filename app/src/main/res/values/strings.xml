@@ -10,6 +10,8 @@
 
     <string name="error_connection">Plese Check Your Connection</string>
     <string name="null_favorite">There are not favorites</string>
+    <string name="null_result">not found</string>
+    <string name="result">Result for : </string>
     <string name="favorite">has been a favorite</string>
     <string name="favorite_error">failed to be favored</string>
     <string name="unfavorite">Favorite deleted</string>

@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.MenuItemCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -28,7 +31,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import devlight.io.library.ntb.NavigationTabBar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     @BindView(R.id.vp_horizontal_ntb)
     ViewPager viewPager;
@@ -38,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
     TextView tvToolbarTitle;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
+    ViewPagerAdapter adapter;
+    String index = "0";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,24 +64,34 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_change_settings) {
-            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
-            startActivity(mIntent);
-        } else if (item.getItemId() == R.id.action_exit) {
-            finish();
+
+        switch (item.getItemId()) {
+            case R.id.action_change_settings:
+                Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+                startActivity(mIntent);
+                break;
+            case R.id.action_exit:
+                finish();
+                break;
+            case R.id.action_search:
+                SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
+                searchView.setOnQueryTextListener(this);
         }
+
         return super.onOptionsItemSelected(item);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         getMenuInflater().inflate(R.menu.main_menu, menu);
+
         return super.onCreateOptionsMenu(menu);
     }
 
     private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new MovieFragment());
         adapter.addFrag(new TvFragment());
         adapter.addFrag(new FavoriteFragment());
@@ -128,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(final int position) {
                 navigationTabBar.getModels().get(position).hideBadge();
+                index = String.valueOf(position);
             }
 
             @Override
@@ -142,6 +159,21 @@ public class MainActivity extends AppCompatActivity {
                 navigationTabBar.postDelayed(() -> model.showBadge(), i * 100);
             }
         }, 500);
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        Intent i = new Intent(MainActivity.this, ResultActivity.class);
+        i.putExtra(ResultActivity.KEYWORD, query);
+        i.putExtra(ResultActivity.INDEX, index);
+        Log.i("INDEX", " " + index);
+        startActivity(i);
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String s) {
+        return false;
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {

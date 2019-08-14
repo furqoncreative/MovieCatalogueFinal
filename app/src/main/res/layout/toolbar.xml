@@ -4,16 +4,14 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:theme="@style/MyToolbar"
+    android:background="@color/colorPrimary"
     android:minHeight="?attr/actionBarSize"
     app:theme="@style/Widget.AppCompat.ActionBar">
 
     <TextView
         android:id="@+id/tvToolbarTitle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:gravity="center"
         android:textColor="@color/white"
         android:textSize="16sp" />
 

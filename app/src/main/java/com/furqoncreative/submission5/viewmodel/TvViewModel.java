@@ -62,6 +62,28 @@ public class TvViewModel extends ViewModel {
         return tv;
     }
 
+    public void searchTvs(final String language, String query) {
+        apiInterface.searchTv(API_KEY, language, query).enqueue(new Callback<TvsResponse>() {
+            @Override
+            public void onResponse(Call<TvsResponse> call, Response<TvsResponse> response) {
+                if (response.isSuccessful()) {
+                    ArrayList<Tv> tvs = new ArrayList<>(Objects.requireNonNull(response.body()).getTvs());
+                    lisTvs.postValue(tvs);
+                    Log.d("MainActivity", "posts loaded from API");
+                } else {
+                    int statusCode = response.code();
+                    // handle request errors depending on status code
+                }
+            }
+
+            @Override
+            public void onFailure(Call<TvsResponse> call, Throwable t) {
+                Log.i("MainActivity", "error", t);
+
+            }
+        });
+    }
+
     public void setTv(int tv_id, String language) {
         apiInterface.getTv(tv_id, API_KEY, language).enqueue(new Callback<Tv>() {
             @Override

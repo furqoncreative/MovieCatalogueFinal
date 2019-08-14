@@ -3,12 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_change_settings"
-        android:title="@string/ganti_bahasa"
-        app:showAsAction="never" />
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
 
-    <item
-        android:id="@+id/action_exit"
-        android:title="@string/exit"
-        app:showAsAction="never" />
+    <group android:id="@+id/group_setting">
+        <item
+            android:id="@+id/action_change_settings"
+            android:title="@string/ganti_bahasa"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_exit"
+            android:title="@string/exit"
+            app:showAsAction="never" />
+    </group>
 </menu>

@@ -20,21 +20,15 @@ public interface ApiInterface {
             @Query("language") String language
     );
 
-    @GET("discover/tv")
-    Call<TvsResponse> getTvs(
+    @GET("search/movie")
+    Call<MoviesResponse> searchMovie(
             @Query("api_key") String apiKey,
-            @Query("language") String language
+            @Query("language") String language,
+            @Query("query") String query
     );
-
 
     @GET("genre/movie/list")
     Call<MovieGenresResponse> getMovieGenres(
-            @Query("api_key") String apiKey,
-            @Query("language") String language
-    );
-
-    @GET("genre/tv/list")
-    Call<TvGenresResponse> getTvGenres(
             @Query("api_key") String apiKey,
             @Query("language") String language
     );
@@ -43,6 +37,25 @@ public interface ApiInterface {
     Call<Movie> getMovie(
             @Path("movie_id") int id,
             @Query("api_key") String apiKEy,
+            @Query("language") String language
+    );
+
+    @GET("discover/tv")
+    Call<TvsResponse> getTvs(
+            @Query("api_key") String apiKey,
+            @Query("language") String language
+    );
+
+    @GET("search/tv")
+    Call<TvsResponse> searchTv(
+            @Query("api_key") String apiKey,
+            @Query("language") String language,
+            @Query("query") String query
+    );
+
+    @GET("genre/tv/list")
+    Call<TvGenresResponse> getTvGenres(
+            @Query("api_key") String apiKey,
             @Query("language") String language
     );
 
