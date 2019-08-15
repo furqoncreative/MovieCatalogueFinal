@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Movie Catalogue</string>
+    <string name="tab_movie">Film</string>
+    <string name="tab_tv">Acara Tv</string>
+
+
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="exit">Keluar</string>
+
+    <string name="error_connection">Silahkan Perikas Koneksi Anda</string>
+    <string name="null_favorite">Tidak ada yang difavoritkan</string>
+    <string name="favorite">berhasil difavoritkan</string>
+    <string name="favorite_error">gagal difavoritkan</string>
+    <string name="unfavorite">Favorit dihapus</string>
+    <string name="item_favorite">Difavoritkan</string>
+
+
+    <string name="overview">Ikhtisar</string>
+    <string name="not_found">Data tidak tersedia dalam bahasa ini.</string>
+
+</resources>

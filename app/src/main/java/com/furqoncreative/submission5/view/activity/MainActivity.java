@@ -67,8 +67,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         switch (item.getItemId()) {
             case R.id.action_change_settings:
-                Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
-                startActivity(mIntent);
+                startActivity(new Intent(this, SettingsActivity.class));
                 break;
             case R.id.action_exit:
                 finish();

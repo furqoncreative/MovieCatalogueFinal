@@ -3,6 +3,8 @@ package com.furqoncreative.submission5.view.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -45,6 +47,7 @@ public class FavoriteFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_favorite, container, false);
         ButterKnife.bind(this, v);
+        setHasOptionsMenu(true);
         return v;
     }
 
@@ -53,6 +56,13 @@ public class FavoriteFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         setupViewPager(viewpager);
         tabs.setViewPager(viewpager);
+    }
+
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        MenuItem item=menu.findItem(R.id.action_search);
+        if(item!=null)
+            item.setVisible(false);
     }
 
     private void setupViewPager(ViewPager viewPager) {
