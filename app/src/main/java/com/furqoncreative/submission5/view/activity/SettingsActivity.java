@@ -17,7 +17,6 @@ import butterknife.ButterKnife;
 
 public class SettingsActivity extends AppCompatActivity {
 
-
     @BindView(R.id.tvToolbarTitle)
     TextView tvToolbarTitle;
     @BindView(R.id.toolbar)
@@ -34,7 +33,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     private void setupToolbar() {
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
         tvToolbarTitle.setText((getResources().getString(R.string.settings)));
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

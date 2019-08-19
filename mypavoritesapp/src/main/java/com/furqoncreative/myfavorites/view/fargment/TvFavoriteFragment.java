@@ -49,7 +49,6 @@ public class TvFavoriteFragment extends Fragment {
     RecyclerView rvTv;
     @BindView(R.id.activity_main)
     RelativeLayout activityMain;
-    private LoadFavoriteCallback callback;
     private TvFavoriteAdapter adapter;
 
     public TvFavoriteFragment() {
@@ -72,7 +71,7 @@ public class TvFavoriteFragment extends Fragment {
     }
 
     private void setupView() {
-        callback = new LoadFavoriteCallback() {
+        LoadFavoriteCallback callback = new LoadFavoriteCallback() {
             @Override
             public void postExecute(Cursor cursor) {
                 ArrayList<Favorite> list = getTvFavoriteList(cursor);

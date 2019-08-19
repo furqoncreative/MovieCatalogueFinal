@@ -1,8 +1,16 @@
 package com.furqoncreative.submission5.model.favorite;
 
 
+import android.database.Cursor;
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import com.furqoncreative.submission5.database.DatabaseContract;
+
+import static android.provider.BaseColumns._ID;
+import static com.furqoncreative.submission5.database.DatabaseContract.FavoriteColumns.ID;
+import static com.furqoncreative.submission5.database.DatabaseContract.getColumnInt;
+import static com.furqoncreative.submission5.database.DatabaseContract.getColumnString;
 
 public class Favorite implements Parcelable {
 
@@ -55,6 +63,26 @@ public class Favorite implements Parcelable {
         category = in.readString();
     }
 
+    public Favorite(Cursor cursor) {
+        this.id = getColumnInt(cursor, _ID);
+        this.mId = getColumnInt(cursor, ID);
+        this.title = getColumnString(cursor, DatabaseContract.FavoriteColumns.TITLE);
+        this.poster = getColumnString(cursor, DatabaseContract.FavoriteColumns.POSTER);
+        this.backdrop = getColumnString(cursor, DatabaseContract.FavoriteColumns.BACKDROP);
+        this.rating = getColumnString(cursor, DatabaseContract.FavoriteColumns.RATING);
+        this.releaseDate = getColumnString(cursor, DatabaseContract.FavoriteColumns.RELEASE_DATE);
+        this.overview = getColumnString(cursor, DatabaseContract.FavoriteColumns.OVERVIEW);
+        this.category = getColumnString(cursor, DatabaseContract.FavoriteColumns.CATEGORY);
+    }
+
+    public String getBackdrop() {
+        return backdrop;
+    }
+
+    public void setBackdrop(String backdrop) {
+        this.backdrop = backdrop;
+    }
+
     public int getmId() {
         return mId;
     }
@@ -77,10 +105,6 @@ public class Favorite implements Parcelable {
 
     public void setPoster(String poster) {
         this.poster = poster;
-    }
-
-    public void setBackdrop(String backdrop) {
-        this.backdrop = backdrop;
     }
 
     public String getRating() {

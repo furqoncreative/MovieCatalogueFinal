@@ -1,6 +1,5 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/softBlack">
@@ -37,17 +36,16 @@
             android:paddingRight="4dp"
             app:stl_defaultTabTextColor="@color/white"
             app:stl_defaultTabTextHorizontalPadding="18dp"
+            app:stl_distributeEvenly="true"
             app:stl_dividerColor="@color/transparant"
             app:stl_dividerThickness="0dp"
-            app:stl_distributeEvenly="true"
             app:stl_indicatorColor="@color/transparant"
             app:stl_indicatorCornerRadius="18dp"
             app:stl_indicatorGravity="center"
             app:stl_indicatorInterpolation="smart"
             app:stl_indicatorThickness="36dp"
             app:stl_underlineColor="@color/transparant"
-            app:stl_underlineThickness="0dp"
-            />
+            app:stl_underlineThickness="0dp" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

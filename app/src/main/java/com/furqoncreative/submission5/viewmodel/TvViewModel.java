@@ -5,12 +5,12 @@ import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
 import com.furqoncreative.submission5.model.tv.Tv;
 import com.furqoncreative.submission5.model.tv.TvGenre;
 import com.furqoncreative.submission5.model.tv.TvGenresResponse;
 import com.furqoncreative.submission5.model.tv.TvsResponse;
 import com.furqoncreative.submission5.network.ApiInterface;
-import com.furqoncreative.submission5.util.ApiUtils;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -20,13 +20,14 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static com.furqoncreative.submission5.BuildConfig.API_KEY;
+import static com.furqoncreative.submission5.util.ApiUtils.getApi;
 
 public class TvViewModel extends ViewModel {
 
+    private static final ApiInterface apiInterface = getApi();
     private final MutableLiveData<ArrayList<Tv>> lisTvs = new MutableLiveData<>();
     private final MutableLiveData<ArrayList<TvGenre>> listTvGenres = new MutableLiveData<>();
     private final MutableLiveData<Tv> tv = new MutableLiveData<>();
-    private  static final ApiInterface apiInterface = new ApiUtils().getApi();
 
     public LiveData<ArrayList<Tv>> getTvs() {
         return lisTvs;
@@ -49,8 +50,8 @@ public class TvViewModel extends ViewModel {
             @Override
             public void onFailure(Call<TvsResponse> call, Throwable t) {
                 Log.i("MainActivity", "error", t);
-
             }
+
         });
     }
 
@@ -79,8 +80,8 @@ public class TvViewModel extends ViewModel {
             @Override
             public void onFailure(Call<TvsResponse> call, Throwable t) {
                 Log.i("MainActivity", "error", t);
-
             }
+
         });
     }
 
@@ -100,8 +101,8 @@ public class TvViewModel extends ViewModel {
             @Override
             public void onFailure(Call<Tv> call, Throwable t) {
                 Log.d("MainActivity", "error loading from API");
-
             }
+
         });
     }
 
@@ -124,6 +125,8 @@ public class TvViewModel extends ViewModel {
                 Log.d("MainActivity", "error loading from API");
 
             }
+
+
         });
     }
 

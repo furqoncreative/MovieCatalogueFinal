@@ -39,8 +39,8 @@ import butterknife.ButterKnife;
 
 public class ResultActivity extends AppCompatActivity {
 
-    static String KEYWORD = "keyword";
-    static String INDEX = "index";
+    static final String KEYWORD = "keyword";
+    static final String INDEX = "index";
     @BindView(R.id.error_layout)
     LinearLayout errorLayout;
     @BindView(R.id.null_result)
@@ -58,7 +58,6 @@ public class ResultActivity extends AppCompatActivity {
     @BindView(R.id.activity_main)
     RelativeLayout activityMain;
     private String QUERY;
-    private String CATEGORY;
     private String LANGUAGE;
     private MoviesAdapter moviesAdapter;
     private final Observer<ArrayList<Movie>> getMovies = new Observer<ArrayList<Movie>>() {
@@ -66,13 +65,13 @@ public class ResultActivity extends AppCompatActivity {
         public void onChanged(ArrayList<Movie> items) {
             if (items != null) {
                 moviesAdapter.addMovies(items);
-                showLoading(false);
+                showLoading();
                 if (moviesAdapter.getItemCount() == 0) {
                     showNull();
                     rvSearch.setVisibility(View.GONE);
                 }
             } else {
-                showLoading(false);
+                showLoading();
                 showNull();
             }
         }
@@ -83,7 +82,7 @@ public class ResultActivity extends AppCompatActivity {
         public void onChanged(ArrayList<MovieGenre> items) {
             if (items != null) {
                 moviesAdapter.addGenres(items);
-                showLoading(false);
+                showLoading();
             }
         }
     };
@@ -94,14 +93,14 @@ public class ResultActivity extends AppCompatActivity {
         @Override
         public void onChanged(ArrayList<Tv> items) {
             if (items != null) {
-                showLoading(false);
+                showLoading();
                 tvsAdapter.addTvs(items);
                 if (tvsAdapter.getItemCount() == 0) {
                     showNull();
                     rvSearch.setVisibility(View.GONE);
                 }
             } else {
-                showLoading(false);
+                showLoading();
                 showNull();
             }
         }
@@ -112,9 +111,9 @@ public class ResultActivity extends AppCompatActivity {
         public void onChanged(ArrayList<TvGenre> items) {
             if (items != null) {
                 tvsAdapter.addGenres(items);
-                showLoading(false);
+                showLoading();
             } else {
-                showLoading(false);
+                showLoading();
                 showNull();
             }
         }
@@ -127,7 +126,7 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
         ButterKnife.bind(this);
         QUERY = getIntent().getStringExtra(KEYWORD);
-        CATEGORY = getIntent().getStringExtra(INDEX);
+        String CATEGORY = getIntent().getStringExtra(INDEX);
         setupToolbar();
         checkConnection();
         getLanguage();
@@ -170,7 +169,7 @@ public class ResultActivity extends AppCompatActivity {
 
         if (networkInfo != null && networkInfo.isConnected()) {
         } else {
-            showLoading(false);
+            showLoading();
             showError();
         }
     }
@@ -242,8 +241,8 @@ public class ResultActivity extends AppCompatActivity {
         txtResult.setText(("\""+QUERY + "\" " + getResources().getString(R.string.null_result)));
     }
 
-    private void showLoading(Boolean state) {
-        if (state) {
+    private void showLoading() {
+        if (false) {
             avi.show();
         } else {
             avi.hide();

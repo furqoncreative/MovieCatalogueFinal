@@ -5,6 +5,7 @@
     <string name="tab_tv">Acara Tv</string>
     <string name="tab_fav">Favorite</string>
 
+    <string name="search">Cari</string>
     <string name="settings">Pengaturan</string>
     <string name="exit">Keluar</string>
 
@@ -18,15 +19,13 @@
     <string name="item_favorite">Difavoritkan</string>
 
     //for preference
-    <string name="notification">Notification</string>
-    <string name="turn_on_off">Turn Off/On Notification</string>
-    <string name="daily_reminder">Daily Remainder</string>
-    <string name="daily_reminder_summary">Hei, Movie Cataloge waiting for you</string>
-    <string name="release_reminder">Release Remainder</string>
-    <string name="release_reminder_summary">New Movie Release Today !</string>
-    <string name="language">Language</string>
-    <string name="change_language">Ganti Bahasa</string>
-    <string name="change_language_summary">Change your Application Language</string>
+    <string name="notification"> Pemberitahuan </string>
+    <string name="turn_on_off"> Matikan / Nyalakan Pemberitahuan </string>    
+    <string name="daily_reminder"> Pengingat Harian </string>
+    <string name="release_reminder">Pengingat Rilis </string>
+    <string name="language"> Bahasa </string>
+    <string name="change_language"> Ganti Bahasa </string>    
+    <string name="change_language_summary"> Ubah Bahasa Aplikasi Anda </string>
 
     <string name="key_language">key_language</string>
     <string name="key_daily">key_daily</string>
@@ -34,5 +33,15 @@
 
     <string name="overview">Ikhtisar</string>
     <string name="not_found">Data tidak tersedia dalam bahasa ini.</string>
+
+    //notification
+    <string name="daily_reminder_title"> Selamat pagi! saatnya untuk Movie Catalogue </string>
+    <string name="daily_reminder_message"> Mari kita lihat apa Film dan Acara TV yang baru di Movie Catalogue </string>  
+    <string name="release_reminder_title"> Baru Saja Rilis Hari Ini !! </string>    
+    <string name="release_reminder_message"> Mari kita periksa ikhtisar dalam Movie Catalogue </string>
+    <string name="daily_reminder_enable">Pengingat Harian dihidupkan</string>
+    <string name="daily_reminder_disable">Pengingat Harian dimatikan</string>
+    <string name="release_reminder_enable">Pengingat Rilis dihidupkan</string>
+    <string name="release_reminder_disable">Pengingat Rilis dimatikan</string>
 
 </resources>

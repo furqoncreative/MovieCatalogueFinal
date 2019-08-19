@@ -1,5 +1,555 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0">
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.ResultActivity activityMain" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment activityMain" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment activityMain" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.viewmodel.MovieViewModel apiInterface" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel apiInterface" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity avi" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity avi" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity avi" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity avi" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity backdropPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity backdropPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity backdropPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity backdropPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter.Viewholder btnMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter.Viewholder btnMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MoviesAdapter.ViewHolder btnMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter.Viewholder btnMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvFavoriteAdapter.Viewholder btnMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvsAdapter.ViewHolder btnMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity category" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity category" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity category" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity category" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity content" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity content" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Favorite CREATOR" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.favorite.Favorite CREATOR" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity errorLayout" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity errorLayout" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity errorLayout" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity errorLayout" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment EXTRA_STATE" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity favorite" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity favorite" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity favorite" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity favorite" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity GENRE" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity GENRE" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity getMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity getMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity getTv" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity getTv" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity helper" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity helper" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity id" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity id" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity id" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity id" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter.Viewholder imageView" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter.Viewholder imageView" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter.Viewholder imageView" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvFavoriteAdapter.Viewholder imageView" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity imgBack" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity imgBack" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity imgBack" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity imgBack" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity imgBackdrop" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity imgBackdrop" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity imgBackdrop" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity imgBackdrop" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity imgFavorite" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity imgFavorite" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity imgFavorite" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity imgFavorite" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity imgPoster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity imgPoster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity imgPoster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity imgPoster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity imgRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity imgRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity imgRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity imgRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity labelOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity labelOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity labelOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity labelOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel listMovieGenre" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel listMovies" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mAdult" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mBackdropPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mBackdropPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mBackdropPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mFirstAirDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mFirstAirDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mGenreIds" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mGenreIds" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mGenreIds" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.MovieGenresResponse mGenres" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.TvGenresResponse mGenres" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity MID" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity MID" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.MovieGenre mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.TvGenre mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.MovieGenre mName" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mName" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mName" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.TvGenre mName" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mOriginalLanguage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mOriginalLanguage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mOriginalLanguage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mOriginalName" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mOriginalName" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mOriginalTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mOriginCountry" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mOriginCountry" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.viewmodel.MovieViewModel movie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel movie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity MOVIE_GENRE" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity MOVIE_GENRE" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity MOVIE_ID" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity MOVIE_ID" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity movieViewModel" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity movieViewModel" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.MoviesResponse mPage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.TvsResponse mPage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mPopularity" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mPopularity" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mPopularity" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mPosterPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mPosterPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mPosterPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.MoviesResponse mResults" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.TvsResponse mResults" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.MoviesResponse mTotalPages" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.TvsResponse mTotalPages" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.MoviesResponse mTotalResults" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.TvsResponse mTotalResults" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mVideo" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mVoteAverage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mVoteAverage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mVoteAverage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.movie.Movie mVoteCount" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Tv mVoteCount" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.model.tv.Tv mVoteCount" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.MainActivity ntb" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity$1 void onChanged(com.furqoncreative.myfavorites.model.Movie movie)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity$1 void onChanged(com.furqoncreative.submission5.model.movie.Movie movie)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity$1 void onChanged(com.furqoncreative.myfavorites.model.Tv tv)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity$1 void onChanged(com.furqoncreative.submission5.model.tv.Tv tv)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.myfavorites.viewmodel.MovieViewModel$1 void onFailure(retrofit2.Call&lt;com.furqoncreative.myfavorites.model.Movie&gt; call, java.lang.Throwable t)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel$3 void onFailure(retrofit2.Call&lt;com.furqoncreative.submission5.model.movie.Movie&gt; call, java.lang.Throwable t)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel$4 void onFailure(retrofit2.Call&lt;com.furqoncreative.submission5.model.movie.MovieGenresResponse&gt; call, java.lang.Throwable t)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel$1 void onFailure(retrofit2.Call&lt;com.furqoncreative.submission5.model.movie.MoviesResponse&gt; call, java.lang.Throwable t)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel$2 void onFailure(retrofit2.Call&lt;com.furqoncreative.submission5.model.movie.MoviesResponse&gt; call, java.lang.Throwable t)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.myfavorites.viewmodel.MovieViewModel$1 void onResponse(retrofit2.Call&lt;com.furqoncreative.myfavorites.model.Movie&gt; call, retrofit2.Response&lt;com.furqoncreative.myfavorites.model.Movie&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel$3 void onResponse(retrofit2.Call&lt;com.furqoncreative.submission5.model.movie.Movie&gt; call, retrofit2.Response&lt;com.furqoncreative.submission5.model.movie.Movie&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel$4 void onResponse(retrofit2.Call&lt;com.furqoncreative.submission5.model.movie.MovieGenresResponse&gt; call, retrofit2.Response&lt;com.furqoncreative.submission5.model.movie.MovieGenresResponse&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.scheduler.MovieReminder$1 void onResponse(retrofit2.Call&lt;com.furqoncreative.submission5.model.movie.MoviesResponse&gt; call, retrofit2.Response&lt;com.furqoncreative.submission5.model.movie.MoviesResponse&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel$1 void onResponse(retrofit2.Call&lt;com.furqoncreative.submission5.model.movie.MoviesResponse&gt; call, retrofit2.Response&lt;com.furqoncreative.submission5.model.movie.MoviesResponse&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.MovieViewModel$2 void onResponse(retrofit2.Call&lt;com.furqoncreative.submission5.model.movie.MoviesResponse&gt; call, retrofit2.Response&lt;com.furqoncreative.submission5.model.movie.MoviesResponse&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.myfavorites.viewmodel.TvViewModel$1 void onResponse(retrofit2.Call&lt;com.furqoncreative.myfavorites.model.Tv&gt; call, retrofit2.Response&lt;com.furqoncreative.myfavorites.model.Tv&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.TvViewModel$3 void onResponse(retrofit2.Call&lt;com.furqoncreative.submission5.model.tv.Tv&gt; call, retrofit2.Response&lt;com.furqoncreative.submission5.model.tv.Tv&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.TvViewModel$4 void onResponse(retrofit2.Call&lt;com.furqoncreative.submission5.model.tv.TvGenresResponse&gt; call, retrofit2.Response&lt;com.furqoncreative.submission5.model.tv.TvGenresResponse&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.TvViewModel$1 void onResponse(retrofit2.Call&lt;com.furqoncreative.submission5.model.tv.TvsResponse&gt; call, retrofit2.Response&lt;com.furqoncreative.submission5.model.tv.TvsResponse&gt; response)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.TvViewModel$2 void onResponse(retrofit2.Call&lt;com.furqoncreative.submission5.model.tv.TvsResponse&gt; call, retrofit2.Response&lt;com.furqoncreative.submission5.model.tv.TvsResponse&gt; response)" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity overview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity overview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity overview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity overview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity poster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity poster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity poster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity poster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity rating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity rating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity rating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity rating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity releaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity releaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity releaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity releaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity TID" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity TID" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity title" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity title" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity title" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity title" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity TV_ID" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity TV_ID" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity tvViewModel" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity tvViewModel" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity txtOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity txtOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity txtOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity txtOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity txtRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity txtRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity txtRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity txtRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity txtReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity txtReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity txtReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity txtReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity txtTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailMovieActivity txtTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.view.activity.DetailTvActivity txtTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.DetailTvActivity txtTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.SettingsFragment change_language" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.SettingsFragment daily_remainder" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.MovieFragment errorLayout" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.ResultActivity errorLayout" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MoviesAdapter.ViewHolder itemMovieGenre" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvsAdapter.ViewHolder itemMovieGenre" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter.Viewholder itemMoviePoster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MoviesAdapter.ViewHolder itemMoviePoster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvFavoriteAdapter.Viewholder itemMoviePoster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvsAdapter.ViewHolder itemMoviePoster" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter.Viewholder itemMovieRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MoviesAdapter.ViewHolder itemMovieRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvFavoriteAdapter.Viewholder itemMovieRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvsAdapter.ViewHolder itemMovieRating" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter.Viewholder itemMovieReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MoviesAdapter.ViewHolder itemMovieReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvFavoriteAdapter.Viewholder itemMovieReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvsAdapter.ViewHolder itemMovieReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter.Viewholder itemMovieTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.MoviesAdapter.ViewHolder itemMovieTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvFavoriteAdapter.Viewholder itemMovieTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.adapter.TvsAdapter.ViewHolder itemMovieTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mAdult" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mBackdropPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mGenreIds" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mId" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mOriginalLanguage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mOriginalTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mOverview" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mPopularity" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mPosterPath" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mReleaseDate" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mVideo" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mVoteAverage" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.myfavorites.model.Movie mVoteCount" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment nullLayout" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment nullLayout" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.scheduler.MovieReminder$1 void onFailure()" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.myfavorites.viewmodel.TvViewModel$1 void onFailure()" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.TvViewModel$3 void onFailure()" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.TvViewModel$4 void onFailure()" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.TvViewModel$1 void onFailure(java.lang.Throwable t)" />
+      <entry_point TYPE="method" FQNAME="com.furqoncreative.submission5.viewmodel.TvViewModel$2 void onFailure(java.lang.Throwable t)" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.SettingsFragment release_remainder" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment rvMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.MovieFragment rvMovie" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment rvTv" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.TvFragment rvTv" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.FavoriteFragment tabs" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.MainActivity toolbar" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.ResultActivity toolbar" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.SettingsActivity toolbar" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.MainActivity tvToolbarTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.ResultActivity tvToolbarTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.SettingsActivity tvToolbarTitle" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.fragment.FavoriteFragment viewpager" />
+      <entry_point TYPE="field" FQNAME="com.furqoncreative.submission5.view.activity.MainActivity viewPager" />
+    </entry_points>
+    <pattern value="com.furqoncreative.myfavorites.model.Movie" />
+    <pattern value="com.furqoncreative.myfavorites.ExampleUnitTest" method="addition_isCorrect" />
+    <pattern value="com.furqoncreative.submission5.ExampleUnitTest" method="addition_isCorrect" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" method="checkConnection" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" method="checkConnection" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" method="checkConnection" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" method="checkConnection" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" method="checkFavorite" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" method="checkFavorite" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" method="checkFavorite" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" method="checkFavorite" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" method="doBack" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" method="doBack" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" method="doFavorite" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" method="doFavorite" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" method="doFavorite" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" method="doFavorite" />
+    <pattern value="com.furqoncreative.myfavorites.ExampleInstrumentedTest" />
+    <pattern value="com.furqoncreative.submission5.ExampleInstrumentedTest" />
+    <pattern value="com.furqoncreative.myfavorites.ExampleUnitTest" />
+    <pattern value="com.furqoncreative.submission5.ExampleUnitTest" />
+    <pattern value="com.furqoncreative.myfavorites.model.Favorite" />
+    <pattern value="com.furqoncreative.submission5.model.favorite.Favorite" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.FavoriteFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.FavoriteFragment" method="FavoriteFragment" />
+    <pattern value="com.furqoncreative.submission5.provider.FavoriteProvider" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="FavoriteRemoteViewsFactory" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteWidget" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteWidgetService" />
+    <pattern value="com.furqoncreative.myfavorites.model.Tv" method="getGenreIds" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.MovieViewModel" method="getGenres" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter" method="getListFavorite" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter" method="getListFavorite" />
+    <pattern value="com.furqoncreative.myfavorites.viewmodel.MovieViewModel" method="getMovie" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.MovieViewModel" method="getMovie" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.MovieViewModel" method="getMovies" />
+    <pattern value="com.furqoncreative.submission5.model.movie.Movie" method="getOriginalTitle" />
+    <pattern value="com.furqoncreative.submission5.scheduler.MovieReminder" method="getReleaseToday" />
+    <pattern value="com.furqoncreative.submission5.view.activity.MainActivity" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.MainActivity" />
+    <pattern value="com.furqoncreative.submission5.scheduler.MovieReminder" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.MovieViewModel" />
+    <pattern value="com.furqoncreative.myfavorites.viewmodel.MovieViewModel" />
+    <pattern value="com.furqoncreative.submission5.view.activity.ResultActivity" />
+    <pattern value="com.furqoncreative.submission5.view.activity.SettingsActivity" />
+    <pattern value="com.furqoncreative.submission5.view.activity.SplashActivity" />
+    <pattern value="com.furqoncreative.submission5.model.movie.Movie" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter" />
+    <pattern value="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.MovieFavoriteFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.MovieFavoriteFragment" method="MovieFavoriteFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment" method="MovieFavoriteFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFragment" method="MovieFragment" />
+    <pattern value="com.furqoncreative.submission5.model.movie.MovieGenre" />
+    <pattern value="com.furqoncreative.submission5.model.movie.MovieGenresResponse" />
+    <pattern value="com.furqoncreative.submission5.adapter.MoviesAdapter" />
+    <pattern value="com.furqoncreative.submission5.model.movie.MoviesResponse" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" method="onCreate" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" method="onCreate" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" method="onCreate" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" method="onCreate" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" method="onViewClicked" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" method="onViewClicked" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.MovieViewModel" method="searchMovies" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.TvViewModel" method="searchTvs" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.MovieViewModel" method="setGenre" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.TvViewModel" method="setGenre" />
+    <pattern value="com.furqoncreative.myfavorites.viewmodel.MovieViewModel" method="setMovie" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.MovieViewModel" method="setMovie" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.MovieViewModel" method="setMovies" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.SettingsFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.SettingsFragment" method="SettingsFragment" />
+    <pattern value="com.furqoncreative.myfavorites.viewmodel.TvViewModel" method="setTv" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.TvViewModel" method="setTv" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.TvViewModel" method="setTvs" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" method="setupData" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" method="setupData" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" method="setupData" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" method="setupData" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" method="setupViewModeL" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" method="setupViewModeL" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" method="setupViewModeL" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" method="setupViewModeL" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" method="showError" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" method="showError" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" method="showError" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" method="showError" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailMovieActivity" method="showLoading" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailMovieActivity" method="showLoading" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.DetailTvActivity" method="showLoading" />
+    <pattern value="com.furqoncreative.submission5.view.activity.DetailTvActivity" method="showLoading" />
+    <pattern value="com.furqoncreative.myfavorites.model.Tv" />
+    <pattern value="com.furqoncreative.submission5.model.tv.Tv" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvFavoriteAdapter" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment" method="TvFavoriteFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment" method="TvFavoriteFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFragment" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFragment" method="TvFragment" />
+    <pattern value="com.furqoncreative.submission5.model.tv.TvGenre" />
+    <pattern value="com.furqoncreative.submission5.model.tv.TvGenresResponse" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvsAdapter" />
+    <pattern value="com.furqoncreative.submission5.model.tv.TvsResponse" />
+    <pattern value="com.furqoncreative.myfavorites.viewmodel.TvViewModel" />
+    <pattern value="com.furqoncreative.submission5.viewmodel.TvViewModel" />
+    <pattern value="com.furqoncreative.myfavorites.ExampleInstrumentedTest" method="useAppContext" />
+    <pattern value="com.furqoncreative.submission5.ExampleInstrumentedTest" method="useAppContext" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter.Viewholder" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter.Viewholder" />
+    <pattern value="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter.Viewholder" />
+    <pattern value="com.furqoncreative.submission5.adapter.MoviesAdapter.ViewHolder" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvFavoriteAdapter.Viewholder" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvsAdapter.ViewHolder" />
+    <pattern value="com.furqoncreative.submission5.database.DatabaseHelper" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.MovieFavoriteFragment.DataObserver" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment.DataObserver" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment.DataObserver" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment.DataObserver" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.MovieFavoriteFragment.DataObserver" method="DataObserver" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment.DataObserver" method="DataObserver" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment.DataObserver" method="DataObserver" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment.DataObserver" method="DataObserver" />
+    <pattern value="com.furqoncreative.submission5.provider.FavoriteProvider" method="delete" />
+    <pattern value="com.furqoncreative.myfavorites.model.Favorite" method="describeContents" />
+    <pattern value="com.furqoncreative.submission5.model.favorite.Favorite" method="describeContents" />
+    <pattern value="com.furqoncreative.myfavorites.model.Favorite" method="Favorite" />
+    <pattern value="com.furqoncreative.submission5.model.favorite.Favorite" method="Favorite" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="getCount" />
+    <pattern value="com.furqoncreative.myfavorites.model.Movie" method="getGenreIds" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter" method="getItemCount" />
+    <pattern value="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter" method="getItemCount" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter" method="getItemCount" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvFavoriteAdapter" method="getItemCount" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="getItemId" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="getLoadingView" />
+    <pattern value="com.furqoncreative.myfavorites.model.Movie" method="getOriginalTitle" />
+    <pattern value="com.furqoncreative.submission5.provider.FavoriteProvider" method="getType" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="getViewAt" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="getViewTypeCount" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="hasStableIds" />
+    <pattern value="com.furqoncreative.submission5.provider.FavoriteProvider" method="insert" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.MovieFavoriteFragment.LoadFavoriteAsync" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment.LoadFavoriteAsync" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment.LoadFavoriteAsync" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment.LoadFavoriteAsync" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.MovieFavoriteFragment.LoadFavoriteAsync" method="LoadFavoriteAsync" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment.LoadFavoriteAsync" method="LoadFavoriteAsync" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment.LoadFavoriteAsync" method="LoadFavoriteAsync" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment.LoadFavoriteAsync" method="LoadFavoriteAsync" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter" method="MovieFavoriteAdapter" />
+    <pattern value="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter" method="MovieFavoriteAdapter" />
+    <pattern value="com.furqoncreative.submission5.adapter.MoviesAdapter" method="MoviesAdapter" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter" method="onBindViewHolder" />
+    <pattern value="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter" method="onBindViewHolder" />
+    <pattern value="com.furqoncreative.submission5.adapter.MoviesAdapter" method="onBindViewHolder" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter" method="onBindViewHolder" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvFavoriteAdapter" method="onBindViewHolder" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvsAdapter" method="onBindViewHolder" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter.Viewholder" method="onClick" />
+    <pattern value="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter.Viewholder" method="onClick" />
+    <pattern value="com.furqoncreative.submission5.adapter.MoviesAdapter.ViewHolder" method="onClick" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter.Viewholder" method="onClick" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvFavoriteAdapter.Viewholder" method="onClick" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvsAdapter.ViewHolder" method="onClick" />
+    <pattern value="com.furqoncreative.submission5.provider.FavoriteProvider" method="onCreate" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="onCreate" />
+    <pattern value="com.furqoncreative.submission5.view.activity.MainActivity" method="onCreate" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.MainActivity" method="onCreate" />
+    <pattern value="com.furqoncreative.submission5.view.activity.ResultActivity" method="onCreate" />
+    <pattern value="com.furqoncreative.submission5.view.activity.SettingsActivity" method="onCreate" />
+    <pattern value="com.furqoncreative.submission5.view.activity.SplashActivity" method="onCreate" />
+    <pattern value="com.furqoncreative.submission5.view.activity.MainActivity" method="onCreateOptionsMenu" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.MainActivity" method="onCreateOptionsMenu" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.SettingsFragment" method="onCreatePreferences" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.FavoriteFragment" method="onCreateView" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.MovieFavoriteFragment" method="onCreateView" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment" method="onCreateView" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFragment" method="onCreateView" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment" method="onCreateView" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment" method="onCreateView" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFragment" method="onCreateView" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter" method="onCreateViewHolder" />
+    <pattern value="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter" method="onCreateViewHolder" />
+    <pattern value="com.furqoncreative.submission5.adapter.MoviesAdapter" method="onCreateViewHolder" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter" method="onCreateViewHolder" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvFavoriteAdapter" method="onCreateViewHolder" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvsAdapter" method="onCreateViewHolder" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="onDataSetChanged" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteRemoteViewsFactory" method="onDestroy" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment" method="onDestroy" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment" method="onDestroy" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteWidget" method="onDisabled" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteWidget" method="onEnabled" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteWidgetService" method="onGetViewFactory" />
+    <pattern value="com.furqoncreative.submission5.view.activity.MainActivity" method="onOptionsItemSelected" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.MainActivity" method="onOptionsItemSelected" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.SettingsFragment" method="onPause" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.SettingsFragment" method="onPreferenceClick" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.FavoriteFragment" method="onPrepareOptionsMenu" />
+    <pattern value="com.furqoncreative.submission5.view.activity.MainActivity" method="onQueryTextChange" />
+    <pattern value="com.furqoncreative.submission5.view.activity.MainActivity" method="onQueryTextSubmit" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteWidget" method="onReceive" />
+    <pattern value="com.furqoncreative.submission5.scheduler.MovieReminder" method="onReceive" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.SettingsFragment" method="onResume" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment" method="onSaveInstanceState" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment" method="onSaveInstanceState" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.SettingsFragment" method="onSharedPreferenceChanged" />
+    <pattern value="com.furqoncreative.submission5.widget.FavoriteWidget" method="onUpdate" />
+    <pattern value="com.furqoncreative.submission5.database.DatabaseHelper" method="onUpgrade" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.FavoriteFragment" method="onViewCreated" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.MovieFavoriteFragment" method="onViewCreated" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFavoriteFragment" method="onViewCreated" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.MovieFragment" method="onViewCreated" />
+    <pattern value="com.furqoncreative.myfavorites.view.fargment.TvFavoriteFragment" method="onViewCreated" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFavoriteFragment" method="onViewCreated" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.TvFragment" method="onViewCreated" />
+    <pattern value="com.furqoncreative.submission5.provider.FavoriteProvider" method="query" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter" method="TvFavoriteAdapter" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvFavoriteAdapter" method="TvFavoriteAdapter" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvsAdapter" method="TvsAdapter" />
+    <pattern value="com.furqoncreative.submission5.provider.FavoriteProvider" method="update" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.MovieFavoriteAdapter.Viewholder" method="Viewholder" />
+    <pattern value="com.furqoncreative.submission5.adapter.MovieFavoriteAdapter.Viewholder" method="Viewholder" />
+    <pattern value="com.furqoncreative.submission5.adapter.MoviesAdapter.ViewHolder" method="ViewHolder" />
+    <pattern value="com.furqoncreative.myfavorites.adapter.TvFavoriteAdapter.Viewholder" method="Viewholder" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvFavoriteAdapter.Viewholder" method="Viewholder" />
+    <pattern value="com.furqoncreative.submission5.adapter.TvsAdapter.ViewHolder" method="ViewHolder" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.MainActivity.ViewPagerAdapter" />
+    <pattern value="com.furqoncreative.submission5.view.activity.MainActivity.ViewPagerAdapter" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.FavoriteFragment.ViewPagerAdapter" />
+    <pattern value="com.furqoncreative.submission5.view.fragment.FavoriteFragment.ViewPagerAdapter" method="ViewPagerAdapter" />
+    <pattern value="com.furqoncreative.submission5.view.activity.MainActivity.ViewPagerAdapter" method="ViewPagerAdapter" />
+    <pattern value="com.furqoncreative.myfavorites.view.activity.MainActivity.ViewPagerAdapter" method="ViewPagerAdapter" />
+    <pattern value="com.furqoncreative.myfavorites.model.Favorite" method="writeToParcel" />
+    <pattern value="com.furqoncreative.submission5.model.favorite.Favorite" method="writeToParcel" />
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
+    <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="10">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="9">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="6" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+        </list>
+      </value>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

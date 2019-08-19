@@ -44,7 +44,6 @@ public class MovieFavoriteFragment extends Fragment {
     RecyclerView rvMovie;
     @BindView(R.id.null_layout)
     LinearLayout nullLayout;
-    private LoadFavoriteCallback callback;
     private MovieFavoriteAdapter adapter;
 
     public MovieFavoriteFragment() {
@@ -67,7 +66,7 @@ public class MovieFavoriteFragment extends Fragment {
     }
 
     private void setupView() {
-        callback = new LoadFavoriteCallback() {
+        LoadFavoriteCallback callback = new LoadFavoriteCallback() {
 
             @Override
             public void postExecute(Cursor cursor) {
@@ -105,7 +104,7 @@ public class MovieFavoriteFragment extends Fragment {
 
 
     interface LoadFavoriteCallback {
-          void postExecute(Cursor cursor);
+        void postExecute(Cursor cursor);
     }
 
     private static class LoadFavoriteAsync extends AsyncTask<Void, Void, Cursor> {

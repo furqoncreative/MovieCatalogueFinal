@@ -20,6 +20,13 @@ public interface ApiInterface {
             @Query("language") String language
     );
 
+    @GET("discover/movie")
+    Call<MoviesResponse> getReleaseToday(
+            @Query("api_key") String apiKey,
+            @Query("primary_release_date.gte") String gteDate,
+            @Query("primary_release_date.lte") String lteDate
+    );
+
     @GET("search/movie")
     Call<MoviesResponse> searchMovie(
             @Query("api_key") String apiKey,

@@ -4,20 +4,21 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.util.Log;
-import android.widget.Toast;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
-import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 import com.furqoncreative.submission5.R;
+import com.furqoncreative.submission5.scheduler.MovieReminder;
+
+import java.util.Objects;
 
 import butterknife.BindString;
 import butterknife.ButterKnife;
 
 public class SettingsFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener, Preference.OnPreferenceClickListener {
+    private final MovieReminder movieReminder = new MovieReminder();
     @BindString(R.string.key_daily)
     String daily_remainder;
     @BindString(R.string.key_relase)
@@ -32,11 +33,12 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        ButterKnife.bind(this, getActivity());
+        ButterKnife.bind(this, Objects.requireNonNull(getActivity()));
         addPreferencesFromResource(R.xml.preferences);
         init();
-        setSummaries();
+        setupValue();
     }
+
 
     private void init() {
         dailySwitch = (SwitchPreference) findPreference(daily_remainder);
@@ -45,7 +47,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
 
     }
 
-    private void setSummaries() {
+    private void setupValue() {
         SharedPreferences sh = getPreferenceManager().getSharedPreferences();
         dailySwitch.setChecked(sh.getBoolean(daily_remainder, false));
         releaseSwitch.setChecked(sh.getBoolean(release_remainder, false));
@@ -66,22 +68,24 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         if (key.equals(daily_remainder)) {
-            Boolean daily = sharedPreferences.getBoolean(daily_remainder, false);
+            boolean daily = sharedPreferences.getBoolean(daily_remainder, false);
             dailySwitch.setChecked(daily);
-            if(daily){
-                Toast.makeText(getContext(), "daily : "+ true, Toast.LENGTH_SHORT).show();
+            if (daily) {
+                String timeDaily = "07:00";
+                movieReminder.setRepeatingAlarm(getActivity(), MovieReminder.TYPE_DAILY, timeDaily, getString(R.string.daily_reminder_title), getString(R.string.daily_reminder_message));
             } else {
-                Toast.makeText(getContext(), "daily : "+ false, Toast.LENGTH_SHORT).show();
+                movieReminder.cancelAlarm(getActivity(), MovieReminder.TYPE_DAILY);
             }
         }
 
         if (key.equals(release_remainder)) {
-            Boolean release = sharedPreferences.getBoolean(release_remainder, false);
+            boolean release = sharedPreferences.getBoolean(release_remainder, false);
             releaseSwitch.setChecked(release);
-            if(release){
-                Toast.makeText(getContext(), "release : "+ true, Toast.LENGTH_SHORT).show();
+            if (release) {
+                String timeRelease = "08:00";
+                movieReminder.setRepeatingAlarm(getActivity(), MovieReminder.TYPE_RELEASE, timeRelease, getString(R.string.release_reminder_title), getString(R.string.release_reminder_message));
             } else {
-                Toast.makeText(getContext(), "release : "+ false, Toast.LENGTH_SHORT).show();
+                movieReminder.cancelAlarm(getActivity(), MovieReminder.TYPE_RELEASE);
             }
         }
     }
@@ -93,7 +97,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
         if (key.equals(change_language)) {
             Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
             startActivity(intent);
-            getActivity().finish();
+            Objects.requireNonNull(getActivity()).finish();
 
             return true;
         }

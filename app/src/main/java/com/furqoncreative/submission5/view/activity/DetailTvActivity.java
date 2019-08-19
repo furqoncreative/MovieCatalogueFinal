@@ -43,6 +43,7 @@ import static com.furqoncreative.submission5.database.DatabaseContract.FavoriteC
 import static com.furqoncreative.submission5.database.DatabaseContract.FavoriteColumns.RELEASE_DATE;
 import static com.furqoncreative.submission5.database.DatabaseContract.FavoriteColumns.TITLE;
 import static com.furqoncreative.submission5.util.ApiUtils.IMAGE_URL;
+import static com.furqoncreative.submission5.widget.FavoriteWidget.sendRefreshBroadcast;
 
 @SuppressWarnings("ALL")
 public class DetailTvActivity extends AppCompatActivity {
@@ -195,7 +196,6 @@ public class DetailTvActivity extends AppCompatActivity {
             getContentResolver().delete(uri, null, null);
             imgFavorite.setImageResource(R.drawable.ic_unfavorite);
             Toast.makeText(this, getString(R.string.unfavorite), Toast.LENGTH_SHORT).show();
-
         } else {
             favorite.setmId(mId);
             favorite.setTitle(title);
@@ -224,6 +224,8 @@ public class DetailTvActivity extends AppCompatActivity {
             }
 
         }
+        sendRefreshBroadcast(getApplicationContext());
+
     }
 
     private boolean checkFavorite() {
@@ -245,4 +247,5 @@ public class DetailTvActivity extends AppCompatActivity {
 
         return favorite;
     }
+
 }
